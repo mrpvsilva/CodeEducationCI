@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CodeEducationCI": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
