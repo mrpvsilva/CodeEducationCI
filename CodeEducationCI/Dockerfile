@@ -7,8 +7,9 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["CodeEducationCI.csproj", "CodeEducationCI/"]
 RUN dotnet restore "CodeEducationCI/CodeEducationCI.csproj"
-COPY . .
+COPY . CodeEducationCI
 WORKDIR "/src/CodeEducationCI"
+
 RUN dotnet build "CodeEducationCI.csproj" -c Release -o /app/build
 
 FROM build AS publish
