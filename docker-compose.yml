@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  dotnet:
+    build: 
+      context: ./CodeEducationCI
+    container_name: dotnet-code-education-ci
+    
